@@ -13,7 +13,7 @@ img{
 }
 a{
  text-decoration: none;
- color: #FFFFFF;
+ color: rgb(243, 243, 243);
 }
 li{
   display: inline-block;
@@ -29,7 +29,7 @@ li{
   float: right;
 }
 /* ------- Nav Start -------- */
-.fixed {
+.nav_fixed {
   width: 100%;
   height: auto;
   padding: 25px 0;
@@ -41,22 +41,18 @@ li{
   z-index: 9999;
 }
 .menu_wrap{
-  position: relative;
-  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .menu_wrap li{
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  color: #FFFFFF;
   margin: 0 15px;
 }
 .menu_wrap .up_left li{
   text-transform: uppercase;
-}
-.logo{
-  width: 204px;
-  margin: 0 auto;
 }
 .logo h1{
   display: inline-block;
@@ -65,27 +61,13 @@ li{
   line-height: 49px;
   color: #FFFFFF;
 }
-.up_left{
-  position: absolute;
-  top:12.5px;
-  left: 0;
-}
 .up_left img{
   margin-bottom: 2px;
-}
-.up_right{
-  position: absolute;
-  top:12.5px;
-  right: 0;
 }
 .up_right img{
   margin-right: 5px;
   position: relative;
   top: 4px;
-}
-.up_right span{
-  display: inline-block;
-  line-height: 24px;
 }
 /* ------- Nav End  ------ */
 /* ------- Header Start ------ */
@@ -99,8 +81,9 @@ li{
   bottom: 65px;
 }
 .bottom_menu ul{
- overflow: auto;
- padding: 0 230px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 230px;
 }
 .bottom_menu ul li{
   font-weight: 400;
@@ -270,6 +253,5 @@ footer p{
   font-size: 20px;
   line-height: 120px;
   text-align: center;
-  color: #FFFFFF;
   text-transform: uppercase;
 }
