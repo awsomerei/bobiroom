@@ -16,7 +16,6 @@ a{
  color: rgb(243, 243, 243);
 }
 li{
-  display: inline-block;
   list-style-type: none;
 }
 .container{
@@ -53,6 +52,12 @@ li{
 }
 .menu_wrap .up_left li{
   text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(243, 243, 243);
+}
+.menu_wrap .up_right li{
+  display: inline-block;
 }
 .logo h1{
   display: inline-block;
@@ -68,6 +73,46 @@ li{
   margin-right: 5px;
   position: relative;
   top: 4px;
+}
+.menu_men{
+  position: relative;
+  left: 150px;
+  width: 400px;
+  display: none;
+}
+.menu_men.active{
+  display: block;
+}
+.list_men{
+  position: flex;
+  flex-direction: column;
+}
+.list_men li{
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgb(243, 243, 243);
+}
+.menu_women{
+  position: relative;
+  left: 240px;
+  width: 400px;
+  display: none;
+}
+.menu_women.active{
+  display: block;
+}
+.list_women{
+  position: flex;
+  flex-direction: column;
+}
+.list_women li{
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgb(243, 243, 243);
 }
 /* ------- Nav End  ------ */
 /* ------- Header Start ------ */
