@@ -119,6 +119,9 @@ li{
 .topper{
   position: relative;
 }
+.topper img{
+  width: 100%;
+}
 .bottom_menu{
   width: 100%;
   height: auto;
